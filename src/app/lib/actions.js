@@ -1,4 +1,4 @@
-const deleteUser = async (userId) => {
+export const deleteUser = async (userId) => {
     'use server';
 
     const res = await fetch(`http://localhost:5000/users/${userId}` ,
