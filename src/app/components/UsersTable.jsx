@@ -59,7 +59,7 @@ const UsersTable = ({users , deleteUserAction}) => {
                 Cancel
               </Button>
               <Button onClick={ () => handleDelete(user._id)} slot="close" variant="danger">
-                Delete User
+                Confirm Delete
               </Button>
             </AlertDialog.Footer>
           </AlertDialog.Dialog>
