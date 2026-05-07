@@ -5,13 +5,13 @@ const UserDetailsPage =async ({params}) => {
 
     const {userId} = await params ;
 
-    const user = await getUserById(userId) 
+    const user =await getUserById(userId) 
 
-    console.log(user)
+    // console.log(user)
 
     return (
         <div>
-            <h1>THis is user details page</h1>
+            <h1>User Details : {user.name}</h1>
         </div>
     );
 };
