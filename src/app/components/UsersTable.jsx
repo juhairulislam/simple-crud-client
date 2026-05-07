@@ -4,6 +4,8 @@ import React from 'react';
 
 const UsersTable = ({users}) => {
     return (
+
+      <div className=''>
         <Table>
       <Table.ScrollContainer>
         <Table.Content aria-label="Team members" className="min-w-[600px]">
@@ -41,6 +43,8 @@ const UsersTable = ({users}) => {
         </Table.Content>
       </Table.ScrollContainer>
     </Table>
+
+      </div>
     );
 };
 
