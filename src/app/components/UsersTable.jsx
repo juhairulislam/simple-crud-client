@@ -32,18 +32,18 @@ const UsersTable = ({users}) => {
                 </Link>
 
                 <AlertDialog>
-      <Button variant="danger">Delete Project</Button>
+      <Button variant="danger">Delete</Button>
       <AlertDialog.Backdrop>
         <AlertDialog.Container>
           <AlertDialog.Dialog className="sm:max-w-[400px]">
             <AlertDialog.CloseTrigger />
             <AlertDialog.Header>
               <AlertDialog.Icon status="danger" />
-              <AlertDialog.Heading>Delete project permanently?</AlertDialog.Heading>
+              <AlertDialog.Heading>Delete User Permanently?</AlertDialog.Heading>
             </AlertDialog.Header>
             <AlertDialog.Body>
               <p>
-                This will permanently delete <strong>My Awesome Project</strong> and all of its
+                This will permanently delete <strong>{user.name}</strong> and all of its
                 data. This action cannot be undone.
               </p>
             </AlertDialog.Body>
@@ -52,7 +52,7 @@ const UsersTable = ({users}) => {
                 Cancel
               </Button>
               <Button slot="close" variant="danger">
-                Delete Project
+                Delete User
               </Button>
             </AlertDialog.Footer>
           </AlertDialog.Dialog>
