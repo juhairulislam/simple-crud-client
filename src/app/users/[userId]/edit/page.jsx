@@ -9,7 +9,8 @@ const UserEditPage = async ({ params }) => {
     const user = await getUserById(userId);
 
 
-    const updateUserWrapper = (formData) =>{
+    const updateUserWrapper =async (formData) =>{
+        'use server'
         return updateUser(userId , formData ) ;
     }
 
