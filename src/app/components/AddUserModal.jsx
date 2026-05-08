@@ -2,7 +2,7 @@ import React from 'react';
 import {Envelope} from "@gravity-ui/icons";
 import {Button, Input, Label, Modal, Surface, TextField} from "@heroui/react";
 
-const AddUserModal = () => {
+const AddUserModal = ({createUserAction}) => {
     return (
         <div>
              <Modal>
@@ -18,7 +18,7 @@ const AddUserModal = () => {
             </Modal.Header>
             <Modal.Body className="p-6">
               <Surface variant="default">
-                <form className="flex flex-col gap-4">
+                <form action={createUserAction} className="flex flex-col gap-4">
                   <TextField className="w-full" name="name" type="text">
                     <Label>Name</Label>
                     <Input placeholder="Enter your name" />
