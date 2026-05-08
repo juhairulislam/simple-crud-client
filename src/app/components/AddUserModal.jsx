@@ -31,16 +31,18 @@ const AddUserModal = ({createUserAction}) => {
                     <Label>Role</Label>
                     <Input placeholder="Enter user role" />
                   </TextField>
+
+                   <Modal.Footer>
+              <Button slot="close" variant="secondary">
+                Cancel
+              </Button>
+              <Button type='submit' slot="close">Add User</Button>
+            </Modal.Footer>
                
                 </form>
               </Surface>
             </Modal.Body>
-            <Modal.Footer>
-              <Button slot="close" variant="secondary">
-                Cancel
-              </Button>
-              <Button slot="close">Add User</Button>
-            </Modal.Footer>
+           
           </Modal.Dialog>
         </Modal.Container>
       </Modal.Backdrop>
