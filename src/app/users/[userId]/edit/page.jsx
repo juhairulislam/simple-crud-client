@@ -15,15 +15,15 @@ const UserEditPage = async ({ params }) => {
 
             <div className='w-1/3 mx-auto'>
                 <form className="flex flex-col gap-4">
-                    <TextField className="w-full" name="name" type="text">
+                    <TextField defaultValue={user?.name} className="w-full" name="name" type="text">
                         <Label>Name</Label>
                         <Input placeholder="Enter your name" />
                     </TextField>
-                    <TextField className="w-full" name="email" type="email">
+                    <TextField defaultValue={user.email} className="w-full" name="email" type="email">
                         <Label>Email</Label>
                         <Input placeholder="Enter your email" />
                     </TextField>
-                    <TextField className="w-full" name="role" type="tel">
+                    <TextField defaultValue={user.role} className="w-full" name="role" type="tel">
                         <Label>Role</Label>
                         <Input placeholder="Enter user role" />
                     </TextField>
