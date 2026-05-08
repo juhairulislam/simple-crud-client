@@ -48,7 +48,7 @@ export const updateUser = async (userId , formData) =>{
 
     if(data.modifiedCount > 0) {
         revalidatePath('/users') ;
-        redirect('users') ;
+        redirect('/users') ;
     }
 }
 

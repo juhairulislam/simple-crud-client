@@ -1,3 +1,4 @@
+import { updateUser } from '@/app/lib/actions';
 import { getUserById } from '@/app/lib/data';
 import { Button, Input, Label, TextField } from '@heroui/react';
 import React from 'react';
