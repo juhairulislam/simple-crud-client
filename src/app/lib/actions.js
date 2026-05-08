@@ -18,7 +18,10 @@ export const createUser = async(formData) =>{
     const data = await res.json() ;
 
 
-    // TODO : Revalidate the path
+if(data.insertedId){
+    revalidatePath('/users') ;
+}
+
     return data ;
 
 }
