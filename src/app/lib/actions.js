@@ -26,6 +26,25 @@ if(data.insertedId){
 
 }
 
+export const updateUser = async (formData) =>{
+
+    'use server' ;
+
+    const updateUser = Object.fromEntries(formData.entries()) ;
+
+    const res = await fetch(`` , {
+        method:'PATCH', 
+        headers:{
+            'content-type': 'application/json'
+        },
+        body:JSON.stringify(updateUser) 
+    }) ;
+
+    const data = await res.json() ;
+
+    // todo: revalidation
+}
+
 export const deleteUser = async (userId) => {
     'use server';
 
