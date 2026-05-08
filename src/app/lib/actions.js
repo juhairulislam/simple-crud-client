@@ -26,18 +26,21 @@ if(data.insertedId){
 
 }
 
-export const updateUser = async (formData) =>{
+export const updateUser = async (userId , formData) =>{
 
     'use server' ;
 
-    const updateUser = Object.fromEntries(formData.entries()) ;
+    const updatedUser = Object.fromEntries(formData.entries()) ;
+
+
+
 
     const res = await fetch(`` , {
         method:'PATCH', 
         headers:{
             'content-type': 'application/json'
         },
-        body:JSON.stringify(updateUser) 
+        body:JSON.stringify(updatedUser) 
     }) ;
 
     const data = await res.json() ;

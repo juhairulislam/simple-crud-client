@@ -9,12 +9,17 @@ const UserEditPage = async ({ params }) => {
     const user = await getUserById(userId);
 
 
+    const updateUserWrapper = (formData) =>{
+        return updateUser(userId , formData ) ;
+    }
+
+
     return (
         <div className='p-5 md:p-15'>
             <h2 className='text-xl md:text-4xl text-center font-bold my-6'>Editing User: {user.name} </h2>
 
             <div className='w-1/3 mx-auto'>
-                <form className="flex flex-col gap-4">
+                <form action={updateUserWrapper} className="flex flex-col gap-4">
                     <TextField defaultValue={user?.name} className="w-full" name="name" type="text">
                         <Label>Name</Label>
                         <Input placeholder="Enter your name" />
