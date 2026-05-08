@@ -35,7 +35,7 @@ export const updateUser = async (userId , formData) =>{
 
 
 
-    const res = await fetch(`` , {
+    const res = await fetch(`http://localhost:5000/users/${userId}` , {
         method:'PATCH', 
         headers:{
             'content-type': 'application/json'
