@@ -17,7 +17,7 @@ const UserEditPage = async ({ params }) => {
 
 
     return (
-        <div className='p-5 md:p-15'>
+        <div className='p-6 md:p-15'>
             <h2 className='text-xl md:text-4xl text-center font-bold my-6'>Editing User: {user.name} </h2>
 
             <div className='w-1/3 mx-auto'>
